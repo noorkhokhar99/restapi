@@ -6,7 +6,7 @@ const app = express();
 
 //api
 const server = http.createServer((req,res) => {
-if(req.url == "/users"){
+if(req.url == "/data"){
     fs.readFile(`${__dirname}/userapi/db.json`, "utf-8", (err, data) => {
       console.log(data)
     })
